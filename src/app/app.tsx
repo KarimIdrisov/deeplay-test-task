@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 import { DatabaseInstance } from './database/database'
 import { HashRouter, Route } from "react-router-dom";
 import { Home } from './pages/home/home'
-import {Login} from "./pages/login/login";
+import {LoginPage} from "./pages/LoginPage/LoginPage";
 
 const rootElement = document.getElementById('root')
 const root = createRoot(rootElement);
@@ -16,7 +16,7 @@ const root = createRoot(rootElement);
         <HashRouter>
             <div>
                 <Route path="/" element={<Home />} />
-                <Route path="/login" element={<Login />} />
+                <Route path="/login" element={<LoginPage />} />
             </div>
         </HashRouter>
     </StrictMode>
